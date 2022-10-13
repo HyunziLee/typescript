@@ -84,6 +84,7 @@ function 함수5(x: number | string){
 // assertion 용도 
 // 1. Narrowing 할 때 
 // 2. 무슨타입이 들어올지 100% 확신할 때 
+// 거의 안쓰면 됨 -> 근데 언제쓰냐? => 남이 짠 코드 수정할 때, 왜 타입 에러가 나는지 모르겠을 때
 
 // 안됨 예시
 let 이름3 :string = 'kim';
