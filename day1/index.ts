@@ -89,3 +89,22 @@ function 함수5(x: number | string){
 // 안됨 예시
 let 이름3 :string = 'kim';
 이름 as number;
+
+
+// type alias
+type Animal = string | number | undefined
+
+let 동물 :Animal;
+// let 동물 :string | number | undefined;
+
+let 동물2 :{name: string, age: number}
+
+// type 변수 작명 관습: 시작 대문자
+
+//typescript쓰면 object 자료 수정 막을 수 있음
+type Human = {
+    readonly name: string // 읽기 전용으로 수정 불가
+}
+const human1: Human = {
+    name: '엠버'
+}
